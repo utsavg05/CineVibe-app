@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import MovieCard from "../components/MovieCard";
 
 function Movies() {
+    
     return (
       <div className="px-10 py-8 bg-gray-100">
         <h1 className="text-2xl font-bold mb-3.5">Blockbuster Re-releasing</h1>
