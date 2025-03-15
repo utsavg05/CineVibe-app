@@ -7,6 +7,7 @@ import Movies from './pages/Movies';
 import Footer from './components/Footer';
 import EventDetails from './pages/EventDetails';
 import MovieBookings from './pages/MovieBookings';
+import PlaysDetails from './pages/PlaysDetails';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         <Route path='/movies' element={<Movies />} />
         <Route path='/events/details' element={<EventDetails />} />
         <Route path='/movies/bookings' element={<MovieBookings />} />
+        <Route path='/shows/details' element={<PlaysDetails />} />
       </Routes>
     {/* <Footer /> */}
     </>
