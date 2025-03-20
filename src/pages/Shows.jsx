@@ -7,7 +7,7 @@ function Shows() {
         <div className="py-10 flex gap-20 flex-col md:flex-row flex-wrap mx-auto ">
         <ShowsCard 
             img="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCA1IEFwciBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00431148-sjbmcjhqrb-portrait.jpg"
-            name="Chaava"
+            name="Ek Main Aur Ek Two"
             location="Action/Drama/Historical"
             price="Rs 300 onwards"
         />
@@ -55,7 +55,7 @@ function Shows() {
         />
         <ShowsCard 
             img="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCA1IEFwciBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00431148-sjbmcjhqrb-portrait.jpg"
-            name="Chaava"
+            name="Ek Main Aur Ek Two"
             location="Action/Drama/Historical"
             price="Rs 300 onwards"
         />

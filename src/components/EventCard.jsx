@@ -1,28 +1,36 @@
-import React from 'react'
+import React from "react";
 import { useNavigate } from "react-router-dom";
 
+const EventCard = ({ name, schedule, img }) => {
+  const isLoggedIn = false;
+  const navigate = useNavigate();
 
-const EventCard = ({name, schedule, img}) => {
-  const isLoggedIn = false
-  const navigate = useNavigate()
   const handleBooking = () => {
-    if(isLoggedIn)
-      navigate("/events/details")
-    else 
-    alert("Please log in to purchase ticket!")
-  }
-  return (
-    <div className='p-3.5 mt-20 w-[80%] mx-auto flex flex-col items-center justify-center bg-white shadow-xl rounded-lg'>
-      <img className='w-full max-h-[80%]' src={img} alt="" />
-      <div className='flex justify-between w-full mt-2'>
-        <h1 className='text-xl font-sans font-semibold'>{name}</h1>
-        <h1 className='text-lg font-sans italic'>{schedule}</h1>
-      </div>
-      <button className='bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white text-lg font-semibold px-12 py-3 rounded-lg cursor-pointer mt-3'
-      onClick={handleBooking}
-      >Buy a ticket</button>
-    </div>
-  )
-}
+    if (isLoggedIn) navigate("/events/details");
+    else alert("Please log in to purchase ticket!");
+  };
 
-export default EventCard
+  return (
+    <div className="p-4 mt-10 w-full max-w-[400px] md:max-w-[700px] mx-auto flex flex-col items-center bg-white shadow-xl rounded-lg">
+      {/* Event Image */}
+      <img className="w-full h-auto rounded-lg" src={img} alt={name} />
+
+      {/* Event Details */}
+      <div className="flex flex-col sm:flex-row justify-between w-full mt-3 text-center sm:text-left">
+        <h1 className="text-lg sm:text-xl font-semibold truncate">{name}</h1>
+        <h1 className="text-sm sm:text-lg italic text-gray-600">{schedule}</h1>
+      </div>
+
+      {/* Buy Ticket Button */}
+      <button
+        className="w-full sm:w-auto bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white text-lg font-semibold px-6 py-2 rounded-lg cursor-pointer mt-3 hover:opacity-90 transition-all"
+        onClick={handleBooking}
+      >
+        Buy a Ticket
+      </button>
+    </div>
+  );
+};
+
+export default EventCard;
+
